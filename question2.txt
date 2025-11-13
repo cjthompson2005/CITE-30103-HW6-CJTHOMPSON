@@ -1,0 +1,17 @@
+Question 2: Stages from source to execution and one example error per stage
+
+1) Preprocessing: The preprocessor handles directives (#include, #define). 
+   Example error: Missing header file causes "#include <foo.h>" to fail (file not found).
+
+2) Compilation: The compiler translates preprocessed source into assembly code.
+   Example error: Syntax error (e.g., missing semicolon) causes compilation failure with an error message.
+
+3) Assembly: Assembler converts assembly into object (.o) file machine code.
+   Example error: Invalid assembly instruction or malformed output from compiler may cause assembler error.
+
+4) Linking: Linker resolves external references and combines object files into an executable.
+   Example error: Undefined reference to a function (e.g., "undefined reference to `main'") due to missing object/library.
+
+5) Loading/Execution: OS loader loads the executable into memory and starts it.
+   Example error: Missing dynamic library at runtime (e.g., libXYZ.so not found) causes execution to fail.
+
