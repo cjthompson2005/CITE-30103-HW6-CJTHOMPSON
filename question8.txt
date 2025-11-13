@@ -1,0 +1,6 @@
+Question 8: Demonstrate global and local scope (see question8.c in repo)
+
+Brief explanation:
+- Global variable declared outside any function is accessible by any function in the file (global scope).
+- Local variable declared inside main() is only accessible within main() (local scope).
+
