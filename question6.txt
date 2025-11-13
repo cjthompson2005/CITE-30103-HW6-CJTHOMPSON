@@ -1,0 +1,20 @@
+Question 6: Identifier naming errors and rules violated
+
+Original lines:
+int 1value = 10;
+float avg-rate = 12.5;
+char Class = 'A';
+
+Corrections and explanation:
+1) int 1value = 10;
+   - Invalid: identifier cannot begin with a digit.
+   - Correct: int value1 = 10;
+
+2) float avg-rate = 12.5;
+   - Invalid: '-' is the subtraction operator; identifiers cannot contain '-'.
+   - Correct: float avg_rate = 12.5;
+
+3) char Class = 'A';
+   - Valid in C, but 'Class' may be confusing; identifiers are case-sensitive. There's no rule violation unless reserved keyword used.
+   - It's recommended to avoid names that look like keywords; 'class' is a C++ keyword but not C, but for clarity use: char classLetter = 'A';
+
