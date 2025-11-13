@@ -1,0 +1,10 @@
+Question 3:
+
+If #include <stdio.h> is removed from a program that calls printf:
+
+- The stage that will fail: Compilation.
+- Typical expected messages:
+  * The compiler will likely warn: "implicit declaration of function 'printf'" (older compilers).
+  * The linker might later produce "undefined reference to `printf`" if prototype isn't declared and linking fails.
+- Explanation: Without stdio.h the compiler doesn't see the prototype for printf; this can produce undefined behavior and linking errors because the signature is unknown.
+
